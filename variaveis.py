@@ -22,3 +22,5 @@ print(f'A soma de {c} e {d} é : {round(c+d,2)}')
 
 
 
+
+
