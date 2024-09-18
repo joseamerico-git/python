@@ -33,7 +33,7 @@ class VeiculoSefaz:
         return f'l{self.livro}f{self.folha}t000001{self.extensao}'
    
     def get_conteudo_arquivo_p7s(self):
-        return f'MIMjdkfdskfjsdkfddisofuidueioruieurioeureiuriueireioureiourioeireuirueouroieuorklshkdfjkdjkdskf'  
+        return f''''''
             
     def exibir_informacoes(self):
         print(f'''<?xml version="1.0" encoding="UTF-8"?>
@@ -46,8 +46,8 @@ class VeiculoSefaz:
                         <cnpjCartorio>{self.cnpj_cartorio}</cnpjCartorio>
                         <cpfResponsavel>{self.cpf_responsavel}</cpfResponsavel>
                         <nomeArquivoP7S>{self.get_arquivo_p7s()}</nomeArquivoP7S>
-                        <conteudoArquivoP7S>{self.get_conteudo_arquivo_p7s}</conteudoArquivoP7S>
-                        <caminhoArquivoP7S>{f'C://{self.get_arquivo_p7s()}'}</caminhoArquivoP7S>
+                        <conteudoArquivoP7S>MIMjdkfdskfjsdkfddisofuidueioruieurioeureiuriueireioureiourioeireuirueouroieuorklshkdfjkdjkdskf</conteudoArquivoP7S>
+                        <caminhoArquivoP7S>{self.get_arquivo_p7s()}</caminhoArquivoP7S>
                         <tamanhoArquivoP7S>{self.get_tamanho_arquivo()}</tamanhoArquivoP7S>
                         <dadosComprador>
                         <tipoDocumento>{self.get_tipo_documento_comprador()}</tipoDocumento>
@@ -74,7 +74,7 @@ class VeiculoSefaz:
                         </veiculo>
                         <veiculo>''')    
         
-if __name__ == '__main__':
+if __name__ == "__main__":
     veiculo_enviar = VeiculoSefaz('18/09/2024','1418','1','00460248243','ETK6D61','244070563539','ANGELA APARECIA CARDOSO GOMES','25943125841','RUA DIRCEU CHIQUETO','100','CENTRO','SP','ASSIS','CASA','')   
     veiculo_enviar.exibir_informacoes() 
          
