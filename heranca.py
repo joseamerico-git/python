@@ -33,6 +33,7 @@ if __name__ == "__main__":
     
     porco = Porco(1.50,60,'Leitão','grunido','mamifero')
     porco.emitir_som()
+    print(porco.get_classe())
     
     
     
